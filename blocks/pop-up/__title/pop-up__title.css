@@ -1,4 +1,4 @@
-.pup-up__title {
+.pop-up__title {
   padding: 34px 36px 0;
   max-width: 330px;
   margin: auto 0;
@@ -8,7 +8,7 @@
   text-align: center;
 }
 @media screen and (max-width: 600px) {
-  .pup-up__title {
+  .pop-up__title {
     padding: 25px 22px 0;
     font-size: 18px;
     line-height: 22px;

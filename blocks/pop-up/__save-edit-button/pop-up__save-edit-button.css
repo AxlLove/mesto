@@ -1,4 +1,4 @@
-.pup-up__save-edit-button {
+.pop-up__save-edit-button {
   padding: 0;
   margin: 48px 36px 37px;
   border: none;
@@ -13,11 +13,11 @@
   border-radius: 2px;
   transition: .05s linear 0.1s;
 }
-.pup-up__save-edit-button:hover {
+.pop-up__save-edit-button:hover {
   opacity: .8;
 }
 @media screen and (max-width: 600px) {
-  .pup-up__save-edit-button {
+  .pop-up__save-edit-button {
     margin: 45px 22px 25px;
     width: 238px;
     height: 46px;

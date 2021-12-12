@@ -1,4 +1,4 @@
-.pup-up__edit {
+.pop-up__edit {
   padding: 0 0 12px;
   outline: none;
   border: none;
@@ -8,7 +8,7 @@
   line-height: 17px;
 }
 @media screen and (max-width: 600px) {
-  .pup-up__edit {
+  .pop-up__edit {
     font-size: 14px;
   line-height: 17px;
   }
