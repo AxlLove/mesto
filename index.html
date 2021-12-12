@@ -1,13 +1,101 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pages/index.css">
-    <title>Место</title>
-</head>
-<body>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Место</title>
+</head>
+
+<body class="body">
+  <div class="page">
+    <section class="pop-up ">
+      <div class="pop-up__form-container">
+        <button class="pop-up__close-button"></button>
+        <form action="" class="pop-up__form">
+          <h2 class="pup-up__title">Редактировать профиль</h2>
+          <fieldset class="pop-up__edit-container">
+            <input type="text" value="Жак-Ив Кусто" class="pup-up__edit pup-up__edit_name">
+            <input type="text" value="Исследователь океана" class="pup-up__edit pup-up__edit_title">
+          </fieldset>
+          <button class="pup-up__save-edit-button">Сохранить</button>
+        </form>
+      </div>
+    </section>
+    <header class="header">
+      <div class="header__logo"></div>
+      <div class="header__line"></div>
+    </header>
+    <main class="content">
+      <section class="profile">
+        <div class="profile__information">
+          <img src="./images/avatar.jpg" alt="аватар" class="profile__image">
+          <div class="profile__text">
+            <div class="profile__text-edit">
+              <p class="profile__name">Жак-Ив Кусто</p>
+              <button type="button" class="profile__edit-button"></button>
+            </div>
+            <p class="profile__title">Исследователь океана</p>
+          </div>
+        </div>
+        <button class="profile__add-button mouse-hover">
+        </button>
+      </section>
+      <section class="place-area">
+        <ul class="places">
+          <li class="places__item">
+            <img src="./images/karacheevsk .jpg" alt="Карачаевск" class="places__image">
+            <div class="places__text">
+              <p class="plases__name">Карачаевск</p>
+              <button class="places__like-button">
+              </button>
+            </div>
+          <li class="places__item">
+            <img src="./images/elbrus (1).png" alt="Эльбрус" class="places__image">
+            <div class="places__text">
+              <p class="plases__name">Гора Эльбрус</p>
+              <button class="places__like-button">
+              </button>
+            </div>
+          <li class="places__item">
+            <img src="./images/Dombai.png" alt="Домбай" class="places__image">
+            <div class="places__text">
+              <p class="plases__name">Домбай</p>
+              <button class="places__like-button">
+              </button>
+            </div>
+          <li class="places__item">
+            <img src="./images/elbrus (1).png" alt="Эльбрус" class="places__image">
+            <div class="places__text">
+              <p class="plases__name">Гора Эльбрус</p>
+              <button class="places__like-button">
+              </button>
+            </div>
+          <li class="places__item">
+            <img src="./images/Dombai.png" alt="Домбай" class="places__image">
+            <div class="places__text">
+              <p class="plases__name">Домбай</p>
+              <button class="places__like-button ">
+              </button>
+            </div>
+          <li class="places__item">
+            <img src="./images/karacheevsk .jpg" alt="Карачаевск" class="places__image">
+            <div class="places__text">
+              <p class="plases__name">Карачево-Чувашии</p>
+              <button class="places__like-button">
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyrights">&#64; 2021 Mesto Russia</p>
+    </footer>
+  </div>
+<script src="./scripts/script.js"></script>
 </body>
+
 </html>
