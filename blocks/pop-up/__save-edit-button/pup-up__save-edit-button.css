@@ -1,0 +1,27 @@
+.pup-up__save-edit-button {
+  padding: 0;
+  margin: 48px 36px 37px;
+  border: none;
+  cursor: pointer;
+  width: 358px;
+  height: 50px;
+  background-color: black;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 2px;
+  transition: .05s linear 0.1s;
+}
+.pup-up__save-edit-button:hover {
+  opacity: .8;
+}
+@media screen and (max-width: 600px) {
+  .pup-up__save-edit-button {
+    margin: 45px 22px 25px;
+    width: 238px;
+    height: 46px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  }

@@ -1,0 +1,15 @@
+.pup-up__edit {
+  padding: 0 0 12px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+@media screen and (max-width: 600px) {
+  .pup-up__edit {
+    font-size: 14px;
+  line-height: 17px;
+  }
+}

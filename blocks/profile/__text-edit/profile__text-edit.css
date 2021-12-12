@@ -1,0 +1,5 @@
+.profile__text-edit {
+  display: flex;
+  gap: 18px;
+  align-items: baseline;
+}
