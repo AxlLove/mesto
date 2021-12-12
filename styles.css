@@ -21,7 +21,7 @@
   width: 142px;
   height: 33px;
 }
-/* TODO сделать изображение векторным*/
+
 .header__line {
   border-bottom: 1px solid rgb(84, 84, 84, 0.7);
   margin: 41px 0 0;
@@ -74,7 +74,7 @@ line-height: 18px;
 .profile__edit-button:hover {
   opacity: 0.8;
 }
-/* TODO вылазит кнопка */
+
 .profile__edit-button-image {
   margin: auto;
   width: 10px;
