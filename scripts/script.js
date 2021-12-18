@@ -26,7 +26,7 @@ popUp.addEventListener('mousedown', closePopUpAnyWhere);
 function formSubmitHandler (evt) {
   evt.preventDefault();
   imputName.textContent = formImputName.value;
-  imputTitle.textContent = formImputTitle.value;0
+  imputTitle.textContent = formImputTitle.value;
   togglePopUp ()
 }
 popUp.addEventListener('submit', formSubmitHandler);
