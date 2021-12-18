@@ -1,9 +1,0 @@
-.header__line {
-  border-bottom: 1px solid rgb(84, 84, 84, 0.7);
-  margin: 41px 0 0;
-}
-@media screen and (max-width: 860px) {
-  .header__line {
-    margin-top: 30px;
-  }
-}

@@ -10,16 +10,18 @@ const svaveEditButton = document.querySelector('.pop-up__save-edit-button');
 
 function togglePopUp () {
   popUp.classList.toggle('pop-up_opened');
+}
+function removeFieldsAndOpenPopUp() {
   formImputName.value = imputName.textContent;
   formImputTitle.value = imputTitle.textContent;
+  togglePopUp ();
 }
-
 function closePopUpAnyWhere (event) {
   if (event.target === event.currentTarget) {
   togglePopUp ()
   }
 }
-popUpOpenButton.addEventListener('click', togglePopUp);
+popUpOpenButton.addEventListener('click', removeFieldsAndOpenPopUp);
 popUpClosedButton.addEventListener('click', togglePopUp);
 popUp.addEventListener('mousedown', closePopUpAnyWhere);
 

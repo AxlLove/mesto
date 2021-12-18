@@ -3,10 +3,12 @@
   background-size: cover;
   width: 142px;
   height: 33px;
+  margin-bottom: 41px;
 }
 @media screen and (max-width: 600px) {
   .header__logo {
     width: 103px;
     height: 24px;
+    margin: 0 27px 31.5px;
   }
 }
