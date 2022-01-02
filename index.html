@@ -11,19 +11,42 @@
 
 <body class="body">
   <div class="page">
-    <section class="pop-up">
+    <section class="pop-up pop-up_type_profile-edit">
       <div class="pop-up__form-container">
         <button type="button" class="pop-up__close-button"></button>
         <form name="form" class="pop-up__form">
           <h2 class="pop-up__title">Редактировать профиль</h2>
           <fieldset class="pop-up__edit-container">
-            <input name="name" type="text" value="Жак-Ив Кусто" class="pop-up__edit pop-up__edit_name">
-            <input name="title" type="text" value="Исследователь океана" class="pop-up__edit pop-up__edit_title">
+            <input name="name" type="text" value="Жак-Ив Кусто" class="pop-up__edit pop-up__edit_type_name" placeholder ="Введите имя">
+            <input name="title" type="text" value="Исследователь океана" class="pop-up__edit pop-up__edit_type_title" placeholder ="Введите профессию">
           </fieldset>
           <button type="submit" class="pop-up__save-edit-button">Сохранить</button>
         </form>
       </div>
     </section>
+    <section class="pop-up pop-up_type_card-edit">
+      <div class="pop-up__form-container">
+        <button type="button" class="pop-up__close-button"></button>
+        <form name="form" class="pop-up__form">
+          <h2 class="pop-up__title">Новое место</h2>
+          <fieldset class="pop-up__edit-container">
+            <input name="name" type="text" value=""
+              class="pop-up__edit pop-up__edit_type_card-name" placeholder ="Название">
+            <input name="title" type="text" value=""
+              class="pop-up__edit pop-up__edit_type_card-link" placeholder ="Ссылка на картинку">
+          </fieldset>
+          <button type="submit" class="pop-up__save-edit-button">Сохранить</button>
+        </form>
+      </div>
+    </section>
+    <section class="pop-up pop-up_type_image ">
+        <figure class = "pop-up__image-container">
+          <button type="button" class="pop-up__close-button"></button>
+          <img src="#" alt="Изображение" class = "pop-up__image">
+          <figcaption class="pop-up__image-title"></figcaption>
+        </figure>
+    </section>
+
     <header class="header">
       <div class="header__logo"></div>
     </header>
@@ -44,54 +67,7 @@
       </section>
       <section class="place-area">
         <ul class="places">
-          <li class="places__item">
-            <img src="./images/karacheevsk.jpg" alt="Карачаевск" class="places__image">
-            <div class="places__text">
-              <h2 class="places__name">Карачаевск</h2>
-              <button type="button" class="places__like-button">
-              </button>
-            </div>
-          </li>
-          <li class="places__item">
-            <img src="./images/elbrus.png" alt="Эльбрус" class="places__image">
-            <div class="places__text">
-              <h2 class="places__name">Гора Эльбрус</h2>
-              <button type="button" class="places__like-button">
-              </button>
-            </div>
-          </li>
-          <li class="places__item">
-            <img src="./images/Dombai.png" alt="Домбай" class="places__image">
-            <div class="places__text">
-              <h2 class="places__name">Домбай</h2>
-              <button type="button" class="places__like-button">
-              </button>
-            </div>
-          </li>
-          <li class="places__item">
-            <img src="./images/elbrus.png" alt="Эльбрус" class="places__image">
-            <div class="places__text">
-              <h2 class="places__name">Гора Эльбрус</h2>
-              <button type="button" class="places__like-button">
-              </button>
-            </div>
-          </li>
-          <li class="places__item">
-            <img src="./images/Dombai.png" alt="Домбай" class="places__image">
-            <div class="places__text">
-              <h2 class="places__name">Домбай</h2>
-              <button type="button" class="places__like-button ">
-              </button>
-            </div>
-          </li>
-          <li class="places__item">
-            <img src="./images/karacheevsk.jpg" alt="Карачаевск" class="places__image">
-            <div class="places__text">
-              <h2 class="places__name">Карачево-Чувашии</h2>
-              <button type="button" class="places__like-button">
-              </button>
-            </div>
-          </li>
+
         </ul>
       </section>
     </main>
@@ -99,6 +75,17 @@
       <p class="footer__copyrights">&#64; 2021 Mesto Russia</p>
     </footer>
   </div>
+  <template class = "places__pattern">
+    <li class="places__item">
+      <button type="button" class="places__delete-button"></button>
+      <img src="#" alt="Изображение" class="places__image">
+      <div class="places__text">
+        <h2 class="places__name"></h2>
+        <button type="button" class="places__like-button">
+        </button>
+      </div>
+    </li>
+  </template>
   <script src="./scripts/script.js"></script>
 </body>
 
