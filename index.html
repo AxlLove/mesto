@@ -17,8 +17,8 @@
         <form name="form" class="pop-up__form">
           <h2 class="pop-up__title">Редактировать профиль</h2>
           <fieldset class="pop-up__edit-container">
-            <input name="name" type="text" value="Жак-Ив Кусто" class="pop-up__edit pop-up__edit_type_name" placeholder ="Введите имя">
-            <input name="title" type="text" value="Исследователь океана" class="pop-up__edit pop-up__edit_type_title" placeholder ="Введите профессию">
+            <input required name="name" type="text" value="Жак-Ив Кусто" class="pop-up__edit pop-up__edit_type_name" placeholder ="Введите имя">
+            <input required name="title" type="text" value="Исследователь океана" class="pop-up__edit pop-up__edit_type_title" placeholder ="Введите профессию">
           </fieldset>
           <button type="submit" class="pop-up__save-edit-button">Сохранить</button>
         </form>
@@ -30,9 +30,9 @@
         <form name="form" class="pop-up__form">
           <h2 class="pop-up__title">Новое место</h2>
           <fieldset class="pop-up__edit-container">
-            <input name="name" type="text" value=""
+            <input required name="name" type="text" value=""
               class="pop-up__edit pop-up__edit_type_card-name" placeholder ="Название">
-            <input name="title" type="text" value=""
+            <input required name="title" type="text" value=""
               class="pop-up__edit pop-up__edit_type_card-link" placeholder ="Ссылка на картинку">
           </fieldset>
           <button type="submit" class="pop-up__save-edit-button">Сохранить</button>
