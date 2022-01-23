@@ -141,7 +141,7 @@ popUpCardEdit.addEventListener('submit', (evt)=>{
   const obj = {
     name: inputCardName.value,
     link: inputCardLink.value,
-  }
+  };
   prependCard(obj);
   togglePopUp(popUpCardEdit);
   inputCardName.value = "";
@@ -151,10 +151,15 @@ popUpCardEdit.addEventListener('submit', (evt)=>{
 popups.forEach((popup) => {
     popup.addEventListener('click', (evt) => {
         if (evt.target.classList.contains('pop-up_opened')) {
-          closePopUp(popup)
+          closePopUp(popup);
         }
         if (evt.target.classList.contains('pop-up__close-button')) {
-          closePopUp(popup)
+          closePopUp(popup);
         }
-    })
+        document.addEventListener('keydown', (evt)=>{
+          if(evt.key ==='Escape'){
+            closePopUp(popup);
+          };
+        });
+    });
 });

@@ -1,0 +1,7 @@
+.pop-up__save-edit-button_disabled{
+    border: 1px solid #000000;
+    cursor: default;
+    color: #000000;
+    background-color: white;
+    opacity: 0.2;
+}

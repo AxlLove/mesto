@@ -14,26 +14,41 @@
     <section class="pop-up pop-up_type_profile-edit">
       <div class="pop-up__form-container">
         <button type="button" class="pop-up__close-button"></button>
-        <form name="form" class="pop-up__form">
+        <form name="form" class="pop-up__form" novalidate>
           <h2 class="pop-up__title">Редактировать профиль</h2>
           <fieldset class="pop-up__edit-container">
-            <input required name="name" type="text" value="Жак-Ив Кусто" class="pop-up__edit pop-up__edit_type_name" placeholder ="Введите имя">
-            <input required name="title" type="text" value="Исследователь океана" class="pop-up__edit pop-up__edit_type_title" placeholder ="Введите профессию">
+            <div class="pop-up__imput-container">
+              <input id='name' required name="name" type="text" value="Жак-Ив Кусто" 
+              class="pop-up__edit pop-up__edit_type_name" placeholder ="Введите имя" minlength="2" maxlength="40">
+              <span id = "name-error" class="pop-up__error-massage pop-up__error-massage_hidden"></span>
+            </div>
+    <div class="pop-up__imput-container">
+  <input id="title" required name="title" type="text" value="Исследователь океана"
+  class="pop-up__edit pop-up__edit_type_title" placeholder ="Введите профессию" minlength="2" maxlength="200">
+  <span id="title-error" class="pop-up__error-massage pop-up__error-massage_hidden"> </span>
+</div>
+
           </fieldset>
-          <button type="submit" class="pop-up__save-edit-button">Сохранить</button>
+          <button  type="submit" class="pop-up__save-edit-button">Сохранить</button>
         </form>
       </div>
     </section>
     <section class="pop-up pop-up_type_card-edit">
       <div class="pop-up__form-container">
         <button type="button" class="pop-up__close-button"></button>
-        <form name="form" class="pop-up__form">
+        <form name="form" class="pop-up__form" novalidate>
           <h2 class="pop-up__title">Новое место</h2>
           <fieldset class="pop-up__edit-container">
-            <input required name="name" type="text" value=""
-              class="pop-up__edit pop-up__edit_type_card-name" placeholder ="Название">
-            <input required name="title" type="text" value=""
-              class="pop-up__edit pop-up__edit_type_card-link" placeholder ="Ссылка на картинку">
+            <div class="pop-up__imput-container">
+              <input id="card-name" required name="name" type="text" value=""
+              class="pop-up__edit pop-up__edit_type_card-name" placeholder ="Название" minlength="2" maxlength="30" required>
+              <span id="card-name-error" class="pop-up__error-massage pop-up__error-massage_hidden"></span>
+            </div>
+            <div class="pop-up__imput-container">
+              <input id="link" required name="title" type="url" value=""
+              class="pop-up__edit pop-up__edit_type_card-link" placeholder ="Ссылка на картинку" required>
+              <span id="link-error" class="pop-up__error-massage pop-up__error-massage_hidden"></span>
+            </div>
           </fieldset>
           <button type="submit" class="pop-up__save-edit-button">Сохранить</button>
         </form>
@@ -41,7 +56,7 @@
     </section>
     <section class="pop-up pop-up_type_image ">
         <figure class = "pop-up__image-container">
-          <button type="button" class="pop-up__close-button"></button>
+          <button dis type="button" class="pop-up__close-button"></button>
           <img src="#" alt="Изображение" class = "pop-up__image">
           <figcaption class="pop-up__image-title"></figcaption>
         </figure>
@@ -87,6 +102,7 @@
     </li>
   </template>
   <script src="./scripts/script.js"></script>
+  <script src="./scripts/validation.js"></script>
 </body>
 
 </html>

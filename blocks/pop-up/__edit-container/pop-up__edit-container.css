@@ -4,7 +4,7 @@
   border: none;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 13px;
 }
 @media screen and (max-width: 600px) {
   .pop-up__edit-container {

@@ -38,3 +38,7 @@
 @import url(../blocks/pop-up/__image-container/pop-up__image-container.css);
 @import url(../blocks/pop-up/__image-title/pop-up__image-title.css);
 @import url(../blocks/pop-up/__image/pop-up__image.css);
+@import url(../blocks/pop-up/__save-edit-button/_disabled/pop-up__save-edit-button_disabled.css);
+@import url(../blocks/pop-up/__edit/_type/pop-up__edit_type_error.css);
+@import url(../blocks/pop-up/__error-massage/pop-up__error-massage.css);
+@import url(../blocks/pop-up/__error-massage/_hidden/pop-up__error-massage_hidden.css);
