@@ -28,7 +28,7 @@ const popups = document.querySelectorAll('.pop-up');
 
 //порофиль
 const popUpProfileEdit = document.querySelector('.pop-up_type_profile-edit');
-const popUpProfileEditOpenButton = document.querySelector('.profile__edit-button');
+const popUpProfileEditOpenButton = document.querySelector('.profile__button_type_profile-edit');
 const popUpProfileEditCloseButton = popUpProfileEdit.querySelector('.pop-up__close-button');
 
 
@@ -41,7 +41,7 @@ const formImputTitle = document.querySelector('.pop-up__edit_type_title');
 
 //карты
 const popUpCardEdit = document.querySelector('.pop-up_type_card-edit');
-const popUpCardEditOpenButton = document.querySelector('.profile__add-button');
+const popUpCardEditOpenButton = document.querySelector('.profile__button_type_card-edit');
 const popUpCardEditCloseButton = popUpCardEdit.querySelector('.pop-up__close-button');
 
 

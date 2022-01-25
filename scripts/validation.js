@@ -66,7 +66,7 @@ function enableValidation ({formSelector, inputSelector, ...rest}){
         input.addEventListener('input', ()=>{
             validateInput(form, input, rest)
         });
-        const buttons = document.querySelectorAll('.profile__add-button_type_button-Edit')
+        const buttons = document.querySelectorAll('.profile__button')
         buttons.forEach((button) =>{
         button.addEventListener('click', ()=>{
            validateInput (form, input, rest) 
