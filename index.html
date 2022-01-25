@@ -14,7 +14,7 @@
     <section class="pop-up pop-up_type_profile-edit">
       <div class="pop-up__form-container">
         <button type="button" class="pop-up__close-button"></button>
-        <form name="form" class="pop-up__form" novalidate>
+        <form id='profileForm' name="form" class="pop-up__form" novalidate>
           <h2 class="pop-up__title">Редактировать профиль</h2>
           <fieldset class="pop-up__edit-container">
             <div class="pop-up__imput-container">
@@ -36,7 +36,7 @@
     <section class="pop-up pop-up_type_card-edit">
       <div class="pop-up__form-container">
         <button type="button" class="pop-up__close-button"></button>
-        <form name="form" class="pop-up__form" novalidate>
+        <form id = "cardForm" name="form" class="pop-up__form" novalidate>
           <h2 class="pop-up__title">Новое место</h2>
           <fieldset class="pop-up__edit-container">
             <div class="pop-up__imput-container">
@@ -56,7 +56,7 @@
     </section>
     <section class="pop-up pop-up_type_image ">
         <figure class = "pop-up__image-container">
-          <button dis type="button" class="pop-up__close-button"></button>
+          <button type="button" class="pop-up__close-button"></button>
           <img src="#" alt="Изображение" class = "pop-up__image">
           <figcaption class="pop-up__image-title"></figcaption>
         </figure>
@@ -72,12 +72,12 @@
           <div class="profile__text">
             <div class="profile__text-edit">
               <h1 class="profile__name">Жак-Ив Кусто</h1>
-              <button type="button" class="profile__edit-button"></button>
+              <button type="button" class="profile__edit-button profile__add-button_type_button-Edit"></button>
             </div>
             <p class="profile__title">Исследователь океана</p>
           </div>
         </div>
-        <button type="button" class="profile__add-button">
+        <buttontype="button" class="profile__add-button profile__add-button_type_button-Edit">
         </button>
       </section>
       <section class="place-area">
