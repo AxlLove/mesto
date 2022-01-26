@@ -73,14 +73,13 @@ function deleteCard (e) {
 function likeCard (e) {
   e.target.classList.toggle('places__like-button_active');
 };
-function closePopUpPressEsc (evt){
-  popups.forEach(popup=>{
-    if(evt.key ==='Escape'){
-      closePopUp (popup)
-  };
-  });
 
-}
+function closePopUpPressEsc (evt){
+  const popupActive = document.querySelector('.pop-up_opened')
+  if(evt.key ==='Escape'){
+    closePopUp (popupActive)
+  };
+};
 //создаем карточку
 function createCard (cardData){
   const cardElement = placesPattern.cloneNode(true);
