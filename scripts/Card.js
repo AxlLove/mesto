@@ -1,10 +1,9 @@
-import {popUpPicture, popUpPictureText, popUpImage} from  './constants.js'
-import { openPopUp } from './utils.js'
 export class Card {
-    constructor (data, cardTemplateSelector){
+    constructor (data, cardTemplateSelector, previewPicture){
     this._name = data.name
     this._link = data.link
     this._template = document.querySelector(cardTemplateSelector).content
+    this._previewPicture = previewPicture;
     };
     _deleteCard (evt) {
         evt.target.closest('.places__item').remove();
@@ -13,13 +12,7 @@ export class Card {
         this._likeCardButton.classList.toggle('places__like-button_active');
       };
 
-    _previewPicture () {
-        popUpPicture.src = this._link;
-        popUpPictureText.textContent = this._name;
-        popUpPicture.alt = this._name;
-      
-        openPopUp (popUpImage);
-    };
+
     _setEventListeners(){
         this._deleteCardButton.addEventListener('click',(evt)=>{
             this._deleteCard(evt);
@@ -28,7 +21,7 @@ export class Card {
             this._likeCard();
         });
         this._placesImage.addEventListener('click', ()=>{
-            this._previewPicture();
+            this._previewPicture(this._name, this._link);
         })
     }
 

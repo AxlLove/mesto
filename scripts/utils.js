@@ -1,6 +1,6 @@
 function closePopUpPressEsc (evt){
-    const popupActive = document.querySelector('.pop-up_opened')
-    if(evt.key ==='Escape'){
+  if(evt.key ==='Escape'){
+      const popupActive = document.querySelector('.pop-up_opened')
       closePopUp (popupActive)
     };
   };

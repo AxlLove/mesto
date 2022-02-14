@@ -14,39 +14,40 @@
     <section class="pop-up pop-up_type_profile-edit">
       <div class="pop-up__form-container">
         <button type="button" class="pop-up__close-button"></button>
-        <form id='profileForm' name="form" class="pop-up__form" novalidate>
+        <form id='profileForm' name="profile-form" class="pop-up__form" novalidate>
           <h2 class="pop-up__title">Редактировать профиль</h2>
           <fieldset class="pop-up__edit-container">
             <div class="pop-up__imput-container">
-              <input id='name' required name="name" type="text" value="Жак-Ив Кусто" 
-              class="pop-up__edit pop-up__edit_type_name" placeholder ="Введите имя" minlength="2" maxlength="40">
-              <span id = "name-error" class="pop-up__error-massage pop-up__error-massage_hidden"></span>
+              <input id='name' required name="name" type="text" value="Жак-Ив Кусто"
+                class="pop-up__edit pop-up__edit_type_name" placeholder="Введите имя" minlength="2" maxlength="40">
+              <span id="name-error" class="pop-up__error-massage pop-up__error-massage_hidden"></span>
             </div>
-    <div class="pop-up__imput-container">
-  <input id="title" required name="title" type="text" value="Исследователь океана"
-  class="pop-up__edit pop-up__edit_type_title" placeholder ="Введите профессию" minlength="2" maxlength="200">
-  <span id="title-error" class="pop-up__error-massage pop-up__error-massage_hidden"> </span>
-</div>
+            <div class="pop-up__imput-container">
+              <input id="title" required name="title" type="text" value="Исследователь океана"
+                class="pop-up__edit pop-up__edit_type_title" placeholder="Введите профессию" minlength="2"
+                maxlength="200">
+              <span id="title-error" class="pop-up__error-massage pop-up__error-massage_hidden"> </span>
+            </div>
 
           </fieldset>
-          <button  type="submit" class="pop-up__save-edit-button">Сохранить</button>
+          <button type="submit" class="pop-up__save-edit-button">Сохранить</button>
         </form>
       </div>
     </section>
     <section class="pop-up pop-up_type_card-edit">
       <div class="pop-up__form-container">
         <button type="button" class="pop-up__close-button"></button>
-        <form id = "cardForm" name="form" class="pop-up__form" novalidate>
+        <form id="cardForm" name="card-form" class="pop-up__form" novalidate>
           <h2 class="pop-up__title">Новое место</h2>
           <fieldset class="pop-up__edit-container">
             <div class="pop-up__imput-container">
               <input id="card-name" required name="name" type="text" value=""
-              class="pop-up__edit pop-up__edit_type_card-name" placeholder ="Название" minlength="2" maxlength="30" >
+                class="pop-up__edit pop-up__edit_type_card-name" placeholder="Название" minlength="2" maxlength="30">
               <span id="card-name-error" class="pop-up__error-massage pop-up__error-massage_hidden"></span>
             </div>
             <div class="pop-up__imput-container">
               <input id="link" required name="title" type="url" value=""
-              class="pop-up__edit pop-up__edit_type_card-link" placeholder ="Ссылка на картинку">
+                class="pop-up__edit pop-up__edit_type_card-link" placeholder="Ссылка на картинку">
               <span id="link-error" class="pop-up__error-massage pop-up__error-massage_hidden"></span>
             </div>
           </fieldset>
@@ -55,11 +56,11 @@
       </div>
     </section>
     <section class="pop-up pop-up_type_image ">
-        <figure class = "pop-up__image-container">
-          <button type="button" class="pop-up__close-button"></button>
-          <img src="#" alt="Изображение" class = "pop-up__image">
-          <figcaption class="pop-up__image-title"></figcaption>
-        </figure>
+      <figure class="pop-up__image-container">
+        <button type="button" class="pop-up__close-button"></button>
+        <img src="#" alt="Изображение" class="pop-up__image">
+        <figcaption class="pop-up__image-title"></figcaption>
+      </figure>
     </section>
 
     <header class="header">
@@ -90,7 +91,7 @@
       <p class="footer__copyrights">&#64; 2021 Mesto Russia</p>
     </footer>
   </div>
-  <template class = "places__pattern">
+  <template class="places__pattern">
     <li class="places__item">
       <button type="button" class="places__delete-button"></button>
       <img src="#" alt="Изображение" class="places__image">
@@ -101,7 +102,7 @@
       </div>
     </li>
   </template>
-  <script type = 'module' src="./scripts/index.js"></script>
+  <script type='module' src="./scripts/index.js"></script>
 </body>
 
 </html>
