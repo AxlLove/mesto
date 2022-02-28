@@ -41,8 +41,8 @@ export const popUpPicture = popUpImage.querySelector('.pop-up__image');
 export const popUpPictureText = popUpImage.querySelector('.pop-up__image-title');
 export const popUpProfileEdit = document.querySelector('.pop-up_type_profile-edit');
 export const popUpProfileEditOpenButton = document.querySelector('.profile__button_type_profile-edit');
-export const formImputName = document.querySelector('.pop-up__edit_type_name');
-export const formImputTitle = document.querySelector('.pop-up__edit_type_title');
+export const formInputName = document.querySelector('.pop-up__edit_type_name');
+export const formInputTitle = document.querySelector('.pop-up__edit_type_title');
 export const popUpCardEdit = document.querySelector('.pop-up_type_card-edit');
 export const popUpCardEditOpenButton = document.querySelector('.profile__button_type_card-edit');
 export const inputCardName = popUpCardEdit.querySelector('.pop-up__edit_type_card-name');
@@ -56,8 +56,8 @@ export const cardTemplateSelector = '.places__pattern';
 export const cardForm = document.querySelector('#cardForm')
 export const profileForm = document.querySelector('#profileForm')
 
-export const imputName = document.querySelector('.profile__name');
-export const imputTitle = document.querySelector('.profile__title');
+export const inputName = document.querySelector('.profile__name');
+export const inputTitle = document.querySelector('.profile__title');
 
 
 
