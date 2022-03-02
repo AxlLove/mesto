@@ -1,14 +1,14 @@
-import '../pages/index.css';
-import { FormValidator } from "./FormValidator.js";
+import './index.css';
+import { FormValidator } from "../scripts/FormValidator";
 import { validConfig,  initialCards,  cardTemplateSelector,popUpProfileEdit,
   popUpProfileEditOpenButton, formInputName,formInputTitle,
   popUpCardEdit, popUpCardEditOpenButton, placesList,popUpImage
-} from "./constants.js";
-import { Card } from "./Card.js";
-import Section from "./Section.js";
-import {UserInfo} from "./UserInfo.js";
-import {PopupWithImage} from "./PopupWithImage.js";
-import {PopupWithForm} from "./PopupWithForm.js";
+} from "../scripts/constants.js";
+import { Card } from "../scripts/Card.js";
+import Section from "../scripts/Section.js";
+import {UserInfo} from "../scripts/UserInfo.js";
+import {PopupWithImage} from "../scripts/PopupWithImage.js";
+import {PopupWithForm} from "../scripts/PopupWithForm.js";
 
 
 const formValidators = {}
@@ -25,12 +25,13 @@ const enableValidation = (config) => {
 };
 enableValidation(validConfig);
 
+const image = new PopupWithImage(popUpImage);
+image.setEventListeners();
+
 const section = new Section ({item: initialCards, renderer: (cardData)=>{
     const card = new Card (cardData, cardTemplateSelector, (name, link)=>{
-      const image = new PopupWithImage(popUpImage, name, link);
-      image.openPopUp();
-      image.setEventListeners();
-    })
+      image.openPopUp(name, link);
+    });
     const cardElements = card.createCard();
     return cardElements;
   }}, placesList);

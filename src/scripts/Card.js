@@ -5,8 +5,9 @@ export class Card {
     this._template = document.querySelector(cardTemplateSelector).content
     this._previewPicture = previewPicture;
     };
-    _deleteCard (evt) {
-        evt.target.closest('.places__item').remove();
+    _deleteCard () {
+        this._cardElement.remove();
+        this._cardElement = null;
       };
     _likeCard () {
         this._likeCardButton.classList.toggle('places__like-button_active');
@@ -14,8 +15,8 @@ export class Card {
 
 
     _setEventListeners(){
-        this._deleteCardButton.addEventListener('click',(evt)=>{
-            this._deleteCard(evt);
+        this._deleteCardButton.addEventListener('click',()=>{
+            this._deleteCard();
         });
         this._likeCardButton.addEventListener('click', ()=>{
             this._likeCard();
@@ -26,21 +27,20 @@ export class Card {
     }
 
     createCard (){
-        this._cardElement = this._template.cloneNode(true);
-
+        this._cardElement = this._template.querySelector('.places__item').cloneNode(true);
         this._placesImage = this._cardElement.querySelector('.places__image');
         const placesName = this._cardElement.querySelector('.places__name');
 
         this._deleteCardButton = this._cardElement.querySelector('.places__delete-button');
         this._likeCardButton = this._cardElement.querySelector('.places__like-button');
-      
-      
+
+
         placesName.textContent = this._name;
         this._placesImage.src = this._link;
         this._placesImage.alt = this._name;
-      
+
         this._setEventListeners();
-      
+
         return this._cardElement;
     };
 }
