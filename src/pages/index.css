@@ -40,4 +40,8 @@
 @import url(../blocks/pop-up/__error-massage/pop-up__error-massage.css);
 @import url(../blocks/pop-up/__error-massage/_hidden/pop-up__error-massage_hidden.css);
 @import url(../blocks/profile/__button/_type/_card-edit/profile__button_type_card-edit.css);
-@import url(../blocks/profile/__button/_type/_profile-edit/profile__button_type_profile-edit.css)
+@import url(../blocks/profile/__button/_type/_profile-edit/profile__button_type_profile-edit.css);
+@import url(../blocks/places/__like-container/places__like-container.css);
+@import url(../blocks/places/__like-count/places__like-count.css);
+@import url(../blocks/pop-up/__form-container/_type/pop-up__form-container_type_confirm.css);
+@import url(../blocks/pop-up/__form-container/_type/pop-up__form-container_type_avatar.css);

@@ -3,11 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="6df10c3c-3f68-4f08-9f56-411be794e32f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/profile/__image/profile__image.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/__image/profile__image.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/Popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/PopupWithImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/PopupWithImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/PopupWithForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/Section.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Section.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/UserInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/constants.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +34,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -46,7 +53,15 @@
       <workItem from="1645899756412" duration="2325000" />
       <workItem from="1645948446861" duration="17106000" />
       <workItem from="1646035790875" duration="26435000" />
-      <workItem from="1646158363857" duration="9337000" />
+      <workItem from="1646158363857" duration="10186000" />
+      <workItem from="1646224345749" duration="4000" />
+      <workItem from="1646503937166" duration="64000" />
+      <workItem from="1647013121506" duration="620000" />
+      <workItem from="1647247441537" duration="864000" />
+      <workItem from="1647337688840" duration="27726000" />
+      <workItem from="1647410048932" duration="34251000" />
+      <workItem from="1647454262298" duration="481000" />
+      <workItem from="1647536857659" duration="773000" />
     </task>
     <servers />
   </component>

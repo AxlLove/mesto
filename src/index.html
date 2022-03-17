@@ -17,14 +17,13 @@
           <h2 class="pop-up__title">Редактировать профиль</h2>
           <fieldset class="pop-up__edit-container">
             <div class="pop-up__imput-container">
-              <input id='name' required name="name" type="text" value=""
-                class="pop-up__edit pop-up__edit_type_name" placeholder="Введите имя" minlength="2" maxlength="40">
+              <input id='name' required name="name" type="text" value="" class="pop-up__edit pop-up__edit_type_name"
+                placeholder="Введите имя" minlength="2" maxlength="40">
               <span id="name-error" class="pop-up__error-massage pop-up__error-massage_hidden"></span>
             </div>
             <div class="pop-up__imput-container">
-              <input id="title" required name="title" type="text" value=""
-                class="pop-up__edit pop-up__edit_type_title" placeholder="Введите профессию" minlength="2"
-                maxlength="200">
+              <input id="title" required name="title" type="text" value="" class="pop-up__edit pop-up__edit_type_title"
+                placeholder="Введите профессию" minlength="2" maxlength="200">
               <span id="title-error" class="pop-up__error-massage pop-up__error-massage_hidden"> </span>
             </div>
 
@@ -45,8 +44,8 @@
               <span id="card-name-error" class="pop-up__error-massage pop-up__error-massage_hidden"></span>
             </div>
             <div class="pop-up__imput-container">
-              <input id="link" required name="link" type="url" value=""
-                class="pop-up__edit pop-up__edit_type_card-link" placeholder="Ссылка на картинку">
+              <input id="link" required name="link" type="url" value="" class="pop-up__edit pop-up__edit_type_card-link"
+                placeholder="Ссылка на картинку">
               <span id="link-error" class="pop-up__error-massage pop-up__error-massage_hidden"></span>
             </div>
           </fieldset>
@@ -54,6 +53,35 @@
         </form>
       </div>
     </section>
+
+    <section class="pop-up pop-up_type_avatar-edit">
+      <div class="pop-up__form-container pop-up__form-container_type_avatar">
+        <button type="button" class="pop-up__close-button"></button>
+        <form id='avatarEditForm' name="avatar-form" class="pop-up__form" novalidate>
+          <h2 class="pop-up__title">Обновить Аватар</h2>
+          <fieldset class="pop-up__edit-container">
+            <div class="pop-up__imput-container">
+              <input id="avatar-link" required name="link" type="url" value=""
+                class="pop-up__edit pop-up__edit_type_avatar-link" placeholder="Введите ссылку" minlength="2"
+                maxlength="200">
+              <span id="avatar-link-error" class="pop-up__error-massage pop-up__error-massage_hidden"></span>
+            </div>
+          </fieldset>
+          <button type="submit" class="pop-up__save-edit-button">Сохранить</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="pop-up pop-up_type_confirm">
+      <div class="pop-up__form-container pop-up__form-container_type_confirm">
+        <button type="button" class="pop-up__close-button"></button>
+        <form id="confirmForm" name="confirm-form" class="pop-up__form" novalidate>
+          <h2 class="pop-up__title">Вы уверены?</h2>
+          <button type="submit" class="pop-up__save-edit-button">Да</button>
+        </form>
+      </div>
+    </section>
+
     <section class="pop-up pop-up_type_image ">
       <figure class="pop-up__image-container">
         <button type="button" class="pop-up__close-button"></button>
@@ -62,19 +90,21 @@
       </figure>
     </section>
 
+
+
     <header class="header">
       <div class="header__logo"></div>
     </header>
     <main class="content">
       <section class="profile">
         <div class="profile__information">
-          <img src="<%=require('./images/avatar.jpg')%>" alt="аватар" class="profile__image">
+          <button type="button" class="profile__image"></button>
           <div class="profile__text">
             <div class="profile__text-edit">
-              <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <h1 class="profile__name"></h1>
               <button type="button" class="profile__button profile__button_type_profile-edit"></button>
             </div>
-            <p class="profile__title">Исследователь океана</p>
+            <p class="profile__title"></p>
           </div>
         </div>
         <button type="button" class="profile__button profile__button_type_card-edit">
@@ -96,8 +126,12 @@
       <img src="#" alt="Изображение" class="places__image">
       <div class="places__text">
         <h2 class="places__name"></h2>
-        <button type="button" class="places__like-button">
-        </button>
+        <div class="places__like-container">
+          <button type="button" class="places__like-button"></button>
+          <span class="places__like-count"></span>
+        </div>
+
+
       </div>
     </li>
   </template>
