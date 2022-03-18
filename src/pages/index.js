@@ -15,19 +15,16 @@ import {PopupWithConfirm} from "../scripts/PopupWithConfirm.js";
 
 let userId
 
-api.getInitialCards().then(res => {
-  res.forEach(data =>{
+const pr1 = api.getProfile()
+const pr2 = api.getInitialCards()
+const promises = [pr1, pr2]
+Promise.all(promises).then(([res1, res2])=> {
+  userInfo.setUserInfo(res1.name, res1.about, res1.avatar);
+  userId = res1._id;
+  res2.reverse().forEach(data =>{
     section.addItem(data);
-  });
-})
-  .catch(console.log);
-
-api.getProfile().then(res => {
-  userInfo.setUserInfo(res.name, res.about, res.avatar);
-  userId = res._id;
-})
-  .catch(console.log);
-
+})})
+    .catch(console.log)
 
 const formValidators = {}
 const enableValidation = (config) => {
@@ -54,7 +51,10 @@ const section = new Section ({item: [], renderer: (cardData)=>{
       (id)=>{
         confirmDelete.openPopUp();
         confirmDelete.addSubmitHandler(()=>{
-          api.deleteCard(id).then(res =>card.deleteCard())
+          api.deleteCard(id).then(res => {
+            card.deleteCard()
+            confirmDelete.closePopUp()
+          })
             .catch(console.log);
         })
     },
