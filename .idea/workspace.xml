@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6df10c3c-3f68-4f08-9f56-411be794e32f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/profile/__image/profile__image.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/__image/profile__image.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/PopupWithConfirm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/PopupWithConfirm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/PopupWithForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/Section.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Section.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/UserInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/constants.js" afterDir="false" />
     </list>
@@ -61,7 +56,7 @@
       <workItem from="1647337688840" duration="27726000" />
       <workItem from="1647410048932" duration="34251000" />
       <workItem from="1647454262298" duration="481000" />
-      <workItem from="1647536857659" duration="773000" />
+      <workItem from="1647536857659" duration="8169000" />
     </task>
     <servers />
   </component>

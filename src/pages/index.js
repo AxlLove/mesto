@@ -1,6 +1,6 @@
 import './index.css';
 import { FormValidator } from "../scripts/FormValidator";
-import { validConfig,  initialCards,  cardTemplateSelector,popUpProfileEdit,
+import { validConfig, cardTemplateSelector,popUpProfileEdit,
   popUpProfileEditOpenButton, formInputName,formInputTitle,
   popUpCardEdit, popUpCardEditOpenButton, placesList,popUpImage,deleteConfirmPopup
    , popUpAvatarEdit, popupAvatarOpenButton
@@ -19,16 +19,15 @@ api.getInitialCards().then(res => {
   res.forEach(data =>{
     section.addItem(data);
   });
-});
+})
+  .catch(console.log);
 
 api.getProfile().then(res => {
-  userInfo.setUserInfo(res.name, res.about);
+  userInfo.setUserInfo(res.name, res.about, res.avatar);
   userId = res._id;
-});
+})
+  .catch(console.log);
 
-api.getAvatar().then(res => {
-  userInfo.setAvatar(res.avatar);
-});
 
 const formValidators = {}
 const enableValidation = (config) => {
@@ -47,7 +46,7 @@ const image = new PopupWithImage(popUpImage);
 
 const section = new Section ({item: [], renderer: (cardData)=>{
     const card = new Card (
-      cardData, 
+      cardData,
       cardTemplateSelector,
       (name, link)=>{
       image.openPopUp(name, link);
@@ -55,19 +54,22 @@ const section = new Section ({item: [], renderer: (cardData)=>{
       (id)=>{
         confirmDelete.openPopUp();
         confirmDelete.addSubmitHandler(()=>{
-          api.deleteCard(id).then(res =>card.deleteCard());
+          api.deleteCard(id).then(res =>card.deleteCard())
+            .catch(console.log);
         })
-    }, 
+    },
     userId,
     (id)=>{
       if(card.isLiked()){
           api.deleteLike(id).then(res=>{
             card.setLikes(res.likes);
           })
+            .catch(console.log)
       }else{
           api.addLike(id).then(res=>{
            card.setLikes(res.likes);
         })
+            .catch(console.log)
       }
     });
     const cardElements = card.createCard();
@@ -79,8 +81,10 @@ const popupCard = new PopupWithForm({popupSelector: popUpCardEdit, formSubmit:(e
   popupCard.renderLoading(true);
     api.addCard(name, link).then(res=>{
       section.addItem(res);
+      popupCard.closePopUp();
     })
-    .finally(()=>{
+      .catch(console.log)
+      .finally(()=>{
       popupCard.renderLoading(false);
   })
   }})
@@ -91,8 +95,10 @@ const popupProfile = new PopupWithForm({popupSelector: popUpProfileEdit, formSub
     const {name, title} = element;
     popupProfile.renderLoading(true);
     api.editProfile(name, title).then(res => {
-      userInfo.setUserInfo(name, title);
+      userInfo.setNameAndDescription(name, title);
+      popupProfile.closePopUp();
     })
+      .catch(console.log)
     .finally(()=>{
       popupProfile.renderLoading(false);
   })
@@ -106,8 +112,10 @@ const popupAvatar = new PopupWithForm ({popupSelector: popUpAvatarEdit, formSubm
     popupAvatar.renderLoading(true)
     api.editAvatar(link)
       .then(res => {
-    userInfo.setAvatar(res.avatar)
+        userInfo.setAvatar(res.avatar)
+        popupAvatar.closePopUp();
     })
+      .catch(console.log)
       .finally(()=>{
         popupAvatar.renderLoading(false)
     })
