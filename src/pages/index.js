@@ -15,9 +15,11 @@ import {PopupWithConfirm} from "../scripts/PopupWithConfirm.js";
 
 let userId
 
-const pr1 = api.getProfile()
-const pr2 = api.getInitialCards()
-const promises = [pr1, pr2]
+//Приношу извинения, не запушил в гитхаб правки
+
+const profilePromise = api.getProfile()
+const cardPromise = api.getInitialCards()
+const promises = [profilePromise, cardPromise]
 Promise.all(promises).then(([res1, res2])=> {
   userInfo.setUserInfo(res1.name, res1.about, res1.avatar);
   userId = res1._id;
