@@ -50,10 +50,6 @@ class Api {
     return  fetch(`${this._baseUrl}/cards/${id}`, {
       method: 'DELETE',
       headers: this._headers,
-      body: JSON.stringify({
-        name: name,
-        link: link
-      })
     })
       .then(res => this._getResponseData(res))
   }
@@ -62,8 +58,6 @@ class Api {
       method: 'DELETE',
       headers: this._headers,
       body: JSON.stringify({
-        name: name,
-        link: link
       })
     })
       .then(res => this._getResponseData(res))
@@ -73,8 +67,6 @@ class Api {
       method: 'PUT',
       headers: this._headers,
       body: JSON.stringify({
-        name: name,
-        link: link
       })
     })
       .then(res => this._getResponseData(res))

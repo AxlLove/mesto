@@ -15,7 +15,6 @@ import {PopupWithConfirm} from "../scripts/PopupWithConfirm.js";
 
 let userId
 
-//Приношу извинения, не запушил в гитхаб правки
 
 const profilePromise = api.getProfile()
 const cardPromise = api.getInitialCards()

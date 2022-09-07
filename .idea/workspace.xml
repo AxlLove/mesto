@@ -4,6 +4,7 @@
     <list default="true" id="6df10c3c-3f68-4f08-9f56-411be794e32f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +13,17 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/index.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/scripts/Api.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/postcss.config.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/scripts/PopupWithImage.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/scripts/UserInfo.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/blocks/page/page.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/webpack.config.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -26,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="G:/Projects/diplom/movies-explorer-frontend" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -51,7 +63,30 @@
       <workItem from="1647337688840" duration="27726000" />
       <workItem from="1647410048932" duration="34251000" />
       <workItem from="1647454262298" duration="481000" />
-      <workItem from="1647536857659" duration="18134000" />
+      <workItem from="1647536857659" duration="19335000" />
+      <workItem from="1647937400025" duration="1791000" />
+      <workItem from="1648280075989" duration="596000" />
+      <workItem from="1648287785721" duration="1947000" />
+      <workItem from="1648294311492" duration="594000" />
+      <workItem from="1648464330326" duration="136000" />
+      <workItem from="1649145644460" duration="10952000" />
+      <workItem from="1649190519724" duration="605000" />
+      <workItem from="1649337373617" duration="2125000" />
+      <workItem from="1649416909609" duration="11853000" />
+      <workItem from="1649668908904" duration="4000" />
+      <workItem from="1649764781317" duration="710000" />
+      <workItem from="1650358331782" duration="2522000" />
+      <workItem from="1650455525177" duration="2647000" />
+      <workItem from="1650471951691" duration="4909000" />
+      <workItem from="1651040941317" duration="43000" />
+      <workItem from="1651041044977" duration="1383000" />
+      <workItem from="1653493924227" duration="680000" />
+      <workItem from="1653638516750" duration="184000" />
+      <workItem from="1658925698864" duration="638000" />
+      <workItem from="1660930107932" duration="1477000" />
+      <workItem from="1661117756869" duration="12000" />
+      <workItem from="1661613101402" duration="149000" />
+      <workItem from="1662410312930" duration="640000" />
     </task>
     <servers />
   </component>
