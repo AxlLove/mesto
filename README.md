@@ -3,8 +3,8 @@
 <div align="center">
 
 
-<a href="https://github.com/AxlLove/mesto"><img src="https://github.com/AxlLove/Axllove/blob/master/src/mestoOOP.PNG" alt="Место"></a>
-<div align="center">https://github.com/AxlLove/mesto</div>
+<a href="https://axllove.github.io/mesto/"><img src="https://github.com/AxlLove/Axllove/blob/master/src/mestoOOP.PNG" alt="Место"></a>
+<div align="center">https://axllove.github.io/mesto/</div>
 
 </div>
 
